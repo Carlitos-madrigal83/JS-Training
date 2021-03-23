@@ -73,7 +73,6 @@
 - [ ] [Count the Monkeys!](https://www.codewars.com/kata/56f69d9f9400f508fb000ba7)
 - [ ] [Reverse words](https://www.codewars.com/kata/5259b20d6021e9e14c0010d4/train/javascript)
 - [ ] [Lario and Muigi Pipe Problem](https://www.codewars.com/kata/56b29582461215098d00000f)
-- [ ] []()
 
 
 <br>
