@@ -39,7 +39,7 @@
 6. Declara una función de nombre `multiplyString` que reciba un número y un string y devuelva una cadena de caracteres cuyo contenido sea el string recibido como segundo parámetro multiplicado por el valor recibido como primer parámetro. 
 7. Declara una función de nombre `toggleBoolean` que reciba un booleano y devuelva el booleando contrario. 
 8. Declara una función de nombre `fillObject` que reciba un objeto vacío, un string y un array y devuelva el mismo objeto con una propiedad cuyo nombre será el string recibido y almacenará el array recibido. 
-9. Declara una funcion de nombre `findObjectInArray`que reciba un array de objetos con las propiedades *id* y *name* y un número y devuelva aquel objeto cuya *id* coincida con el número recibido. 
+9. Declara una funcion de nombre `findObjectInArray`que reciba un array de objetos con las propiedades *id*, *name* y un número y devuelva aquel objeto cuya *id* coincida con el número recibido. 
 10. Declara una función de nombre `findPropertyInObject` que reciba un objeto y un string y devuelva *true* si el objeto posee una propiedad que coincida con el segundo parámetro de la función y *false* si no la posee. 
 11. Declara una función de nombre `findSnakeInObject` que reciba un objeto y un string de dos palabras en snake_case y devuelva *true* si el objeto posee una propiedad que coincida con el segundo parámetro de la función y *false* si no la posee. 
 12. Declara una función de nombre `makePalindrome` que reciba un string y devuelva un palíndromo a partir del mismo.

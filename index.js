@@ -39,17 +39,17 @@ const object = {
 }
 
 //11.-
-let boolean = true
+let boolean = true;
 
 //12.-
-let oppositeBoolean = !boolean
+let oppositeBoolean = !boolean;
 
 // F U N C I O N E S - - ->
 
 //1.-
 function multiplyTwoNumbers(firstNumber, secondNumber) {
     firstNumber * secondNumber;
-    console.log(multiplyTwoNumbers)
+    console.log(multiplyTwoNumbers);
 }
 multiplyTwoNumbers()
 let a = 'Carlos';
@@ -110,6 +110,8 @@ function findOddNumbers(arrayOfNumbers) {
 
 findOddNumbers(arrayOfNumbers);
 
+// E J E R C I C I O   5
+
 function addAllNumbers(arrayOfNumbers) {
     let suma = arrayOfNumbers[0];
 
@@ -134,18 +136,83 @@ function addAllNumbers(arrayOfNumbers) {
 // suma =
 addAllNumbers(arrayOfNumbers);
 
-//function multiplyString(numero, string) {
+// E J E R C I C I O   6
 
-//}
-//multiplyString();
-let booleanNew = true
-console.log(booleanNew)
-
-function toggleBoolean(booleanNew) {
-    //console.log(booleanNew)
-    return !booleanNew;
+function multiplyString(num, str) {
+    return String(num * +str);
 }
-console.log(booleanNew)
+multiplyString(6, '645');
 
-toggleBoolean(booleanNew);
-console.log(booleanNew)
+let num = Number(23);
+let str = String('Carlos');
+let bol = Boolean(true);
+
+str.length
+
+// E J E R C I C I O   7
+function toggleBoolean(boolean) {
+    //console.log(booleanNew)
+    return !boolean;
+}
+toggleBoolean(boolean);
+
+// E J E R C I C I O   8
+
+function fillObject(obj, str, arr) {
+    obj[str] = arr;
+    return obj;
+}
+fillObject({}, 'modelos', ['serie 3', 'serie 5']);
+
+// E J E R C I C I O   9
+let obj = {
+    name: 'Carlos', // propiedad -> clave:valor
+    id: 1
+};
+let obj2 = {
+    name: 'Jose',
+    id: 2
+};
+let obj3 = {
+    name: 'Aroa',
+    id: 3
+};
+
+function findObjectInArray(arr, num) {
+    let objDevolver;
+
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i]['id'] === num) {
+            objDevolver = obj;
+        }
+    }
+
+    return objDevolver;
+}
+findObjectInArray([obj, obj2, obj3], 1);
+
+// E J E R C I C I O   10
+
+function findPropertyInObject(obj, str) {
+
+    let objProperties = Object.keys(obj);
+    let propiedadEncontrada = false;
+
+    for (let i = 0; i < objProperties.length; i++) {
+        if (objProperties[i] === str) {
+            propiedadEncontrada = true;
+        }
+    }
+
+    return propiedadEncontrada;
+
+}
+findPropertyInObject(obj, 'name');
+
+// E J E R C I C I O   10 Opción 2
+function findPropertyInObject2(obj, str) {
+    return obj.hasOwnProperty(str);
+}
+findPropertyInObject2(obj, 'name');
+
+
