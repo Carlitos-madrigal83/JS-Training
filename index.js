@@ -53,6 +53,7 @@ function multiplyTwoNumbers(firstNumber, secondNumber) {
 }
 multiplyTwoNumbers()
 let a = 'Carlos';
+
 function multiplyTwoNumbers(a, b) { // arguments
     return a * b
 }
@@ -128,7 +129,23 @@ function addAllNumbers(arrayOfNumbers) {
 // Ejecución 2 ->
 // suma = suma + arrayOfNumbers[];
 // suma = suma + arrayOfNumbers[];
-// suma = 
-// suma = 
-// suma = 
+// suma =
+// suma =
+// suma =
 addAllNumbers(arrayOfNumbers);
+
+//function multiplyString(numero, string) {
+
+//}
+//multiplyString();
+let booleanNew = true
+console.log(booleanNew)
+
+function toggleBoolean(booleanNew) {
+    //console.log(booleanNew)
+    return !booleanNew;
+}
+console.log(booleanNew)
+
+toggleBoolean(booleanNew);
+console.log(booleanNew)
