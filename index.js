@@ -215,4 +215,48 @@ function findPropertyInObject2(obj, str) {
 }
 findPropertyInObject2(obj, 'name');
 
+// E J E R C I C I O   11
+
+function findSnakeInObject(obj, snake_case) {
+    // No entiendo el ejercicio
+}
+findSnakeInObject();
+
+// E J E R C I C I O   12
+
+function makePalindrome(str) {
+    let strNew = str.slice(0, str.length - 1);
+    let strNewReverse = strNew.split("").reverse().join("");
+    return str + strNewReverse
+}
+makePalindrome('recon');
+
+// oso
+
+// 'arañara reconocer' Palabras palindromas
+// E J E R C I C I O   13
+
+function sortStrings(arr) {
+    return arr.sort(function (a, b) {
+        if (a < b) {
+            return 1;
+        }
+        if (a > b) {
+            return -1;
+        }
+        // a must be equal to b
+        return 0;
+    });
+}
+sortStrings(['Carlos', 'Aroa', 'Jose']);
+
+// Programación encapsulada
+(() => {  // función flecha anónima autoejecutada
+    const miFuncion = function () { // Declaración de función
+        a = 10;
+        console.log(this); // Variable this apunta al objeto window
+        console.log(a);
+    }();
+})();
+
 
