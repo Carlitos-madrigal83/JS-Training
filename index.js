@@ -256,7 +256,81 @@ sortStrings(['Carlos', 'Aroa', 'Jose']);
         a = 10;
         console.log(this); // Variable this apunta al objeto window
         console.log(a);
-    }();
+    };
 })();
 
+// E J E R C I C I O   14
 
+function convertToCamelCase(a, b, c) {
+    let stringConvert = a + b[0].toUpperCase() + b.slice(1, b.length) + c[0].toUpperCase() + c.slice(1, c.length);
+    return stringConvert;
+
+    // carlosAroaJose
+}
+convertToCamelCase("carlos", "aroa", "jose");
+
+
+
+function convertToCamelCase2(strs) { // for
+    let str, strFinal = strs[0];
+
+    for (let i = 1; i < strs.length; i++) {
+        str = strs[i][0].toUpperCase() + strs[i].slice(1, strs[i].length);
+        console.log(str);
+        strFinal = strFinal + str;
+    }
+    console.log(strFinal);
+
+}
+convertToCamelCase2(["carlos", "aroa", "jose"]);
+
+function convertToCamelCase3(strs) { // for
+    let stringsConvert = [];
+
+    for (let i = 0; i < strs.length; i++) {
+        if (i) {
+            stringsConvert.push(strs[i][0].toUpperCase() + strs[i].slice(1, strs[i].length));
+        } else {
+            stringsConvert.push(strs[i]);
+        }
+    }
+
+    return stringsConvert.join("");
+
+}
+convertToCamelCase3(["carlos", "aroa", "jose"]);
+
+function convertToCamelCase4(strs) { // map
+    let stringsConvert = strs.map(function (str, index, objetoTrabajado) {
+        // console.log(index); // índice de cada elemento de strs
+        // console.log(str); // cada elemento de strs
+        // console.log({ objetoTrabajado }); // cada elemento de strs
+        if (index)
+            return str[0].toUpperCase() + str.slice(1, str.length);
+        else {
+            return str;
+        }
+    });
+
+    return stringsConvert.join("");
+
+    // carlosAroaJose
+}
+convertToCamelCase4(["carlos", "aroa", "jose"]);
+
+function convertToCamelCase5(strs) {
+    return strs.map((str, index) => index ? (str[0].toUpperCase() + str.slice(1, str.length)) : str).join("");
+}
+convertToCamelCase5(["carlos", "aroa", "jose"]);
+
+// E J E R C I C I O   15
+
+function convertToKebabCase(a, b, c) {
+
+    console.log(arguments);
+    if (arguments.length > 2) {
+        return Array.prototype.join.call(arguments, "");
+    }
+}
+
+let kebabCase = convertToKebabCase(2, 4, 6);
